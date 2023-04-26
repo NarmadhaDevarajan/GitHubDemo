@@ -41,5 +41,5 @@ let details = {
             }
   
 }
-//for(let i=0;i<details.length;i++)
+for(let i=0;i<details.length;i++)
     console.log(details);

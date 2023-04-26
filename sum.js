@@ -15,7 +15,7 @@
   //start-here
   //Your code goes here … replace the below line with your code logic 
  //let a=[];
- a=userInput[0].split(" ");
+ let a=userInput[0].split(" ");
   console.log(a[0]);
 
   //end-here

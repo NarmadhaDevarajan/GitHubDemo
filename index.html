@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			GUVI JS DAY3
+		</title>
+			</head>
+			<body>
+				<h1>HELLO</h1>
+                <h2>THIS IS THE EXAMPLE FOR XMLHTTP REQUEST</h2>
+				<script>
+					console.log("welcome to HTML JS");
+                    function handleData(){
+						let data=JSON.parse(this.responseText);
+						console.log(data);
+					for (let i=0;i<data.length;i++)
+					console.log(data[i].name.common,data[i].region,data[i].sub-region,data[i].population);
+					
+								
+					
+					}
+
+
+					const req=new XMLHttpRequest();
+					req.addEventListener('load',handleData);
+					req.open("GET","https://restcountries.com/v3.1/all");
+					req.send();
+				</script>
+			</body>
+</html>
